@@ -13,8 +13,8 @@ function MovieDetails({movie,credits}) {
           <h2 className="text-3xl font-semibold">{movie.title} ({movie.release_date.substring(0, 4)})</h2>
           <div className="mt-4">
             <p className="text-lg"><span className="font-bold">Genre:</span> {movie.genres.map(genre => genre.name).join(', ')}</p>
-            <p className="text-lg"><span className="font-bold">Director:</span> {credits.directors.join(', ')}</p>
-            <p className="text-lg"><span className="font-bold">Actors:</span> {credits.actors.join(', ')}</p>
+            <p className="text-lg"><span className="font-bold">Director:</span> {credits?.directors?.join(', ')}</p>
+            <p className="text-lg"><span className="font-bold">Actors:</span> {credits?.actors?.join(', ')}</p>
           </div>
           <div className="mt-4">
             <h3 className="text-2xl font-semibold">Plot</h3>
